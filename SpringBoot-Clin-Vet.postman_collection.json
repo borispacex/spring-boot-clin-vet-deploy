@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "91e7fd17-cb76-49e0-a233-53772b4bf53c",
+		"name": "SpringBoot-Clin-Vet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5726533"
+	},
+	"item": [
+		{
+			"name": "1-AgregarDueños",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_duenio\": 6,\n    \"dni\": 9884972,\n    \"nombre\": \"Boris\",\n    \"apellido\": \"Vargas\",\n    \"celular\": \"60514138\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/duenio/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"duenio",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2-TraerDueños",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/duenio/traer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"duenio",
+						"traer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3-AgregarMascota",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "4-TraerMascotas",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "5-TraerCaniches",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "6-TraerMascoDueños(DTo)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id_duenio\": 6,\n    \"dni\": 9884972,\n    \"nombre\": \"Boris\",\n    \"apellido\": \"Vargas\",\n    \"celular\": \"60514138\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/duenio/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"duenio",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
